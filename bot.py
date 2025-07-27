@@ -145,4 +145,20 @@ async def change_color():
         except Exception as e:
             print("❌ Error në change_color:", e)
 
-bot.run("DISCORD_BOT_TOKEN")
+bot.run("TOKEN")
+import os
+
+import discord
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix='!')
+
+@bot.event
+async def on_ready():
+    print(f'Logged in as {bot.user}')
+
+@bot.command()
+async def perserit(ctx, *, message):
+    await ctx.send(message)
+
+bot.run(os.getenv("TOKEN"))
