@@ -145,7 +145,7 @@ async def change_color():
         except Exception as e:
             print("❌ Error në change_color:", e)
 
-bot.run(os.getenv("TOKEN")
+bot.run(os.getenv("TOKEN"))
 import os
 
 import discord
@@ -161,4 +161,4 @@ async def on_ready():
 async def perserit(ctx, *, message):
     await ctx.send(message)
 
-bot.run(os.getenv("TOKEN")
+bot.run(os.getenv("TOKEN"))
