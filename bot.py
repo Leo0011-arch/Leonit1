@@ -145,4 +145,4 @@ async def change_color():
         except Exception as e:
             print("❌ Error në change_color:", e)
 
-bot.run("TOKEN")
+bot.run("DISCORD_BOT_TOKEN")
